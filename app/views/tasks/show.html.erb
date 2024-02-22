@@ -1,0 +1,11 @@
+<div>
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p>
+<% if @task.completed  %>
+<%= "Completada" %>
+<% else %>
+<%= "No se ha compleatdo" %>
+<% end %>
+<p><%= link_to "Volver a tareas", tasks_path %></p>
+<p><%= link_to "Editar tarea", edit_task_path %></p>
+</div>
